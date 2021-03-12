@@ -6,9 +6,12 @@ function onFormSubmit() {
     var formData = readFormData();
     if (selectedRow == null)
         insertNewRecord(formData);
-    else
         resetForm();
         
+}
+
+function resetForm() {
+    document.getElementById('myForm').reset();
 }
 
 function readFormData() {
